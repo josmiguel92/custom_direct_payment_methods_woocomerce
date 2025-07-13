@@ -1,0 +1,214 @@
+  
+        .digages-onboard-addacnt-info {
+            display: flex;
+            justify-content: space-between; 
+            margin-top: 10px;
+            border-bottom: 1px solid #CDC9F3; 
+            padding-bottom: 12px;
+        }
+        .digages-onboard-addacnt-infofill {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px;
+            width: 120px;
+            height: 16px;
+            /* background: #FFFFFF; */
+            border: 1px solid #CDC9F3; 
+            border-radius: 24px;
+        }
+        .digages-onboard-addacnt-infofillitem { 
+            border-right: 1px solid #CDC9F3; 
+            height: 16px;
+            width: 30px;
+        }
+        .digages-onboard-addacnt-infofillitem2 {  
+            height: 16px;
+            width: 30px;
+        }
+        .digages-onboard-addacnt-infofillitembg1
+        {
+            background-color: #E8E6F9;
+            border-radius: 24px 0px 0px 24px;
+        }
+        .digages-onboard-addacnt-infofillitembg2
+        {
+            background-color: #E8E6F9; 
+        }
+        .digages-onboard-addacnt-infofillitembg3
+        {
+            background-color: #E8E6F9; 
+        }
+        .digages-onboard-addacnt-infofillitembg4
+        {
+            background-color: #E8E6F9;
+            border-radius: 0px 24px 24px 0px;
+        }
+        .digages-onboard-addacnt-infofillitemfr
+        { 
+            border-left: 24px;
+        }
+        details {
+            border-bottom: 1px solid #ECEAF5;
+            border-radius: 5px; 
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        summary {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+            user-select: none;/* Bank Accounts */
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px; 
+            color: #1D2327;
+        }
+        .digages-onboard-addacnt-summarytxtalign
+        {
+            display: flex;
+            align-items: center;
+        }
+        .digages-onboard-addacnt-summarytxtalign2
+        {
+            display: flex;
+            align-items: center;
+        }
+        summary::-webkit-details-marker { display: none; }
+        .digages-onboard-addacnt-radio {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px dotted #3C434A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .digages-onboard-addacnt-radio::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #3C434A;
+            display: none;
+        }
+        .digages-onboard-addacnt-checked .digages-onboard-addacnt-radio::before { display: block; }
+        .digages-onboard-addacnt-checked .digages-onboard-addacnt-radio { border: 2px dotted #2563eb; }
+        .digages-onboard-addacnt-checked .digages-onboard-addacnt-radio::before { background: #2563eb; }
+        .digages-onboard-addacnt-count {            
+            width: 24px;  /* Adjust size as needed */
+            height: 24px; /* Keep width and height equal for a perfect circle */
+            background-color: #1D35B4; /* Change to any color */
+            border-radius: 50%; /* Makes it circular */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            margin-right:30px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .digages-onboard-addacnt-chevron {
+            width: 7px;
+            height: 7px;
+            border-left: 2px solid #2C3338;
+            border-bottom: 2px solid #2C3338;
+            transform: rotate(-45deg);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        details[open] .digages-onboard-addacnt-chevron { transform: rotate(135deg); margin-top:10px; }
+        .digages-onboard-addacnt-add-btn
+        {
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 12px;
+            gap: 4px;
+            height: 40px;
+            background: #FFFFFF;
+            border: 1px solid #3858E9;
+            border-radius: 2px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            color: #3858E9;
+            cursor: pointer;
+        }
+        .digages-onboard-addacnt-accnttxt
+        {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #2C3338;
+        margin-bottom:16px;
+        margin-top: 10px;
+        }
+
+        .digages-onboard-addacnt-details
+        {
+            display: flex;
+            /* width: 576px; */
+            align-items: center;
+            padding: 14px 20px;
+            background: #FFFFFF;
+            border-radius: 2px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #1E1E1E;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        .digages-onboard-addacnt-menu {            
+            width: 24px;  /* Adjust size as needed */
+            height: 24px; /* Keep width and height equal for a perfect circle */
+            background-color: #F6F7F7; /* Change to any color */
+            border: 1px solid #DCDCDE;
+            border-radius: 50%; /* Makes it circular */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left:40px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            align-items: center;
+            text-align: center;
+            color: #1D2327;
+            cursor: pointer;
+        }
+.digages-onboard-addacnt-menu-text
+{
+    margin-top: -2px;
+}
+.digages-onboard-addacnt-details-left
+{
+    width: 472px !important;
+    text-align: justify;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.digages-onboard-addacnt-details-right
+{
+    margin-left: 40px;
+}

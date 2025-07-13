@@ -1,0 +1,72 @@
+body
+{
+    background-color: #F7F7FD;
+    margin: 0;
+    padding: 0;
+}
+
+#adminmenuwrap
+{
+    display: none !important;
+}
+
+#wpadminbar
+{
+    display: none !important;
+}
+
+#wpcontent
+{
+    padding-left: 0px !important;
+}
+#wpcontent, #wpfooter
+{
+    margin-left: 0px !important;
+}
+
+#wpfooter
+{
+    display: none !important;
+}
+#adminmenuback
+{
+    display: none !important;
+}
+
+.screen-reader-shortcut
+{
+    display: none !important;
+}
+.wp-toolbar
+{
+    padding-top: 0px !important;
+}
+
+
+.digages-plugin-notice
+{
+    display: none !important;
+}
+
+.notice
+{
+    display: none !important;
+}
+
+
+.notice, div.error, div.updated
+{
+    display: none !important;
+}
+
+
+.digages-fade-in {
+    opacity: 0;
+    animation: fadeIn 1.0s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }

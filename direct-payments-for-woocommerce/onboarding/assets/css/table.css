@@ -1,0 +1,57 @@
+
+.digages-onboard-table-container {
+    width: 100%; 
+    background: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0px; 
+    border: 1px solid #ECEAF5;
+    box-shadow: 1px 2px 40px 5px rgba(0, 0, 0, 0.02);
+    border-radius: 2px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1E1E1E;
+}
+th, td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #ECEAF5;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1D2327;
+    width: 192px;
+    border-right: 1px solid #ECEAF5;
+}
+.digages-onboard-table-item {
+    display: flex;
+    align-items: center; /* Centers text and image vertically */
+    justify-content: start; /* Centers the content horizontally */ 
+}
+
+.icon img {
+    display: block; 
+}
+
+td {
+    width: 408px;
+}
+.icon {
+    margin-right: 8px;
+}
+tr:last-child td {
+    border-bottom: none;
+}
+tr:last-child th {
+    border-bottom: none;
+}

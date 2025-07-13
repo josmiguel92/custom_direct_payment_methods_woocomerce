@@ -1,0 +1,97 @@
+ 
+        /* Container for the dropdown */
+        .digages-onboard-addacnt-menudropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown content */
+        .digages-onboard-addacnt-menudropdown-content {
+            display: none;
+            position: absolute;    
+            z-index: 1;
+            margin-left:-150px;
+            margin-top:0px; 
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 4px 0px;
+            gap: 4px; 
+            width: 200px;  
+            background: #FFFFFF;
+            /* box-shadow/small */
+            box-shadow: 0px 0px 40px rgba(69, 71, 69, 0.2);
+            border-radius: 16px;
+            
+        }
+            
+@media (max-width: 767px) {  
+    .digages-onboard-addacnt-menudropdown-content
+    { 
+        margin-left:-175px; 
+    }
+}
+
+.digages-onboard-addacnt-menudropdown-content span {
+            color: #1D2327; 
+            padding: 12px 24px;
+            text-decoration: none;
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        /* Change background on hover */
+/* First span inside first div */
+.digages-onboard-addacnt-menudropdown-content > div:first-child > span {
+    border-radius: 10px 10px 0 0;
+}
+
+/* Last span inside last div */
+.digages-onboard-addacnt-menudropdown-content > div:last-child > span {
+    border-radius: 0 0 10px 10px;
+}
+
+/* Middle spans — if more than two */
+.digages-onboard-addacnt-menudropdown-content > div:not(:first-child):not(:last-child) > span {
+    border-radius: 0px;
+}
+
+/* Optional: only-child case */
+.digages-onboard-addacnt-menudropdown-content > div:only-child > span {
+    border-radius: 10px;
+}
+
+/* Hover */
+.digages-onboard-addacnt-menudropdown-content span:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+        /* Links inside the dropdown */
+        .digages-onboard-addacnt-menudropdown-content a {
+            color: #1D2327; 
+            padding-top:6px;
+            padding-bottom:6px;
+            padding-left:18px;
+            padding-right:18px;
+            text-decoration: none;
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        
+        /* Change background on hover */
+        .digages-onboard-addacnt-menudropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Show dropdown when the 'active' class is added */
+        .digages-onboard-addacnt-menudropdown.digages-onboard-addacnt-menuactive .digages-onboard-addacnt-menudropdown-content {
+            display: block;
+        }
+

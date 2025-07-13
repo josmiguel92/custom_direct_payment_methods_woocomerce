@@ -1,0 +1,354 @@
+
+.digages-onboard-checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #333;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.digages-onboard-checkbox-container input {
+    display: none;
+}
+
+.digages-onboard-checkmark {
+    width: 35px;
+    height: 20px;
+    border-radius: 2px;    
+    background-color: #fff;
+    border: 2px solid #3858E9;
+    display: inline-block; 
+    position: relative;
+}
+
+.digages-onboard-checkbox-container input:checked + .digages-onboard-checkmark::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    background-image: url('../img/checkmark.svg'); /* Replace with your image */
+    background-size: cover;
+    transform: translate(-50%, -50%);
+}
+
+.digages-onboard-checkbox-container input:checked + .digages-onboard-checkmark {
+    background-color: #3858E9;
+    border-color: #3858E9;
+}
+
+
+.digages-onboard-text {
+    text-align: start;
+}
+
+
+
+
+
+.digages-intrest-check-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 640px;
+    justify-content: center;
+}
+.digages-intrest-check-option {
+    position: relative; 
+}
+input[type="checkbox"] {
+    display: none;
+}
+.digages-intrest-check-label {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F1;
+    box-shadow: 1px 2px 40px 5px rgba(0, 0, 0, 0.02);
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #2C3338;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* Default checkbox circle */
+.digages-intrest-check-custom-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #DCDCDE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    color: white; 
+} 
+
+.digages-intrest-check-custom-checkbox2 {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #DCDCDE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    color: white; 
+}
+
+
+/* Checked state */
+input[type="checkbox"]:checked + label {
+    border-color: #2962ff;
+    box-shadow: 0px 0px 6px rgba(41, 98, 255, 0.5); 
+}
+input[type="checkbox"]:checked + label .digages-intrest-check-custom-checkbox {
+    background-color: #2962ff;
+    border-color: #2962ff;
+}
+input[type="checkbox"]:checked + label .digages-intrest-check-custom-checkbox::after {
+    content: ""; 
+    width: 9px;
+    height: 9px;
+    background-image: url('../img/checkmark.svg'); /* Replace with your image */
+    background-size: cover; 
+}
+
+
+
+.digages-intrest-check-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 640px;
+    justify-content: center;
+}
+
+.digages-intrest-check-option2 {
+    position: relative; 
+    width: 310px;
+}
+
+
+.digages-intrest-check-label2 {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: left;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 24px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F1;
+    box-shadow: 1px 2px 40px 5px rgba(0, 0, 0, 0.02);
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #2C3338;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.digages-intrest-check-label3 {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: left;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 24px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F1;
+    box-shadow: 1px 2px 40px 5px rgba(0, 0, 0, 0.02);
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #A7AAAD;
+    margin-bottom: 20px; 
+        position: relative; 
+        cursor: not-allowed; 
+    transition: all 0.3s ease;
+}
+    .digages-intrest-check-label3::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(240, 238, 238, 0.5); /* Dark overlay */
+        z-index: 1;
+    }
+
+.digages-intrest-check-label2deta
+{
+    width: 178px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2C3338; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.digages-intrest-check-label2detatxt
+{
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+text-align: left;
+color: #1E1E1E;
+margin-bottom: 4px;
+}
+
+.digages-intrest-check-label2detaimg
+{
+    align-items: end;
+    justify-content: end;
+    width: 24px;
+    height: 24px;
+}
+
+.digages-intrest-methods-wall
+{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 12px 20px 12px 24px;
+gap: 12px;
+width: 590px;
+margin-top: 24px;
+background: #FCF9E8;
+border-left: 4px solid #DBA617;
+box-shadow: 1px 2px 40px 5px rgba(0, 0, 0, 0.02);
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+color: #1D2327;
+text-align: left;
+}
+
+.digages-intrest-check-container3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 590px;
+    justify-content: center; 
+}
+
+
+.digages-success-btn-checkout{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 17px 38px;  
+background: #3858E9;
+border-radius: 2px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+color: #FFFFFF;
+border-color: transparent;
+cursor: pointer;
+}
+
+.digages-success-btn-checkouta
+{
+text-decoration: none;
+}
+.digages-success-btn-other{ 
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 17px 38px;  
+gap: 8px;  
+background: #FFFFFF;
+border: 1px solid #3858E9;
+border-radius: 2px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+color: #3858E9;
+cursor: pointer;
+}
+
+.digages-success-txts{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+text-align: center;
+color: #1D2327;
+margin-top: 32px;
+}
+.digages-success-txts a{ 
+    color: #3858E9;
+    text-decoration: none;
+    }
+    
+.digages-success-btn-off{
+margin-left: 12px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 17px 24px;
+background: #3858E9;
+border-radius: 2px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+color: #FFFFFF;
+border-color: transparent;
+cursor: pointer;
+width: 137px !important;
+}
+ 
+
+.digages-intrest-methods-wall-txtp2
+{
+    color: #F8C92F;
+}
+
+
+.digages-licensekey-input
+{ 
+align-items: start;
+padding: 12px 16px;
+gap: 4px;
+width: 400px;
+height: 40px;
+background: #FFFFFF;
+border: 1px solid #E0E0E0;
+border-radius: 2px;
+}
+

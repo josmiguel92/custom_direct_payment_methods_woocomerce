@@ -1,0 +1,20 @@
+[
+    {
+      "name": "Direct Payments for Woocommerce Pro",
+      "image": "https://ps.w.org/direct-payments-for-woocommerce/assets/icon-128x128.png?rev=3175751",
+      "description": "Enable direct payments from your customers via bank transfers, mobile money, crypto and  Peer-to-Peer platforms like Zelle, Venmo e.t.c",
+      "learn_more": "https://digages.com/direct-payments-for-woocommerce/free-vs-pro",
+      "settings": "/wp-admin/admin.php?page=wc-settings&tab=checkout&section=digages_direct_payments",
+      "download_url": "https://digages.com/go/cpiP7y",
+      "path": "direct-payments-for-woocommerce/digages.php"
+    },
+    {
+      "name": "Direct Payments WP",
+      "image": "https://ps.w.org/direct-payments-wp/assets/icon-128x128.png?rev=3217756",
+      "description": "Direct Payments WP empowers businesses to receive payments easily. Easily receive direct payments with forms, invoices and pages.",
+      "learn_more": "https://digages.com/direct-payments-for-woocommerce/free-vs-pro",
+      "settings": "/wp-admin/admin.php?page=direct-payment-settings",
+      "download_url": "https://digages.com/go/8UUWil",
+      "path": "direct-payments-wp/direct-payments.php"
+    }
+  ]
