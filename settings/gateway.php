@@ -112,11 +112,7 @@ function digages_direct_payments_gateway_init() {
                                 admin_url('admin.php')
                                 )
                                 ) . '"  >Peer-to-Peer</a>.<br/><div class="container-fluid text-start digages_settings_notice_topspace upgrbgtum digages_settings_notice">
-                    <div class="rowt rowt-colts-1 rowt-colts-sm-1 rowt-colts-md-1">
-                    <div class="colt upgrbgtumtxt">Only <b>one (1)</b> payment method is allowed in the Free version. Upgrade to PRO to unlock all methods <br/>and more features.
-                    </div>
-                    <div class="colt"><a href="https://digages.com/direct-payments-for-woocommerce/" target="_blank"><button type="button" class="trddbtn">Upgrade to PRO</button></a></div> 
-                    </div>
+                    
                     </div>',
                         'class' => 'tumaz-payment-method-field payment-method-checkbox'
                     ), 

@@ -17,9 +17,9 @@ if (!defined('ABSPATH')) {
 
             //$json_url = 'https://digages.com/dp-api-activate/digages-plugin-install.php'; // Replace with your JSON U
             $json_url = $data_url; // Replace with your JSON URL
-            $response = wp_remote_get($json_url);
+            $response = null; //wp_remote_get($json_url);
             
-            if (is_wp_error($response)) {
+            if (is_wp_error($response) || empty($response)) {
                 echo '<p>Error loading plugins.</p>';
                 return;
             }

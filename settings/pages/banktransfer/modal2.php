@@ -6,14 +6,6 @@
     <div class="digages-text-start digages-desktop-span-12 digages-tab-span-12 digages-mobile-span-12">
 
 
-<div class="container-fluid text-start upgrbgtum">
-  <div class="rowt rowt-colts-1 rowt-colts-sm-1 rowt-colts-md-1">
-    <div class="colt upgrbgtumtxt">Only 1 account is allowed in the Free version. Upgrade to PRO to add unlimited accounts and unlock more features.
-    </div>
-    <div class="colt"><a href="https://digages.com/direct-payments-for-woocommerce/" target="_blank"><button type="button" class="trddbtn">Upgrade to PRO</button></a></div> 
-  </div>
-</div>
-
 <br/>
  
 </div>
