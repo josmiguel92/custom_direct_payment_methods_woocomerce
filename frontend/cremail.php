@@ -7,7 +7,7 @@
 <div style="font-weight: 400;font-size: 14px;line-height: 22px;color: #3858E9;">    
 <span class="tumaz_displayEmail">    
 </span>     
-<span style="color: #1D2327;">just paid you    
+<span style="color: #1D2327;">acaba de realizar un pago directo    
 </span>    
 </div>      
 <div style="font-weight: 700;font-size: 24px;line-height: 29px;color: #1D2327;">    
@@ -18,13 +18,13 @@
 <!-- body main -->     
 <div style="background-color: #fff;padding-bottom: 24px;margin-bottom: 20px;padding-left: 20px;padding-right: 20px;">     
 <div style="border-bottom: 1px dashed #F0F0F1;padding-top: 16px;padding-bottom: 20px;">     
-<div style="color: #1D2327;text-align: center;">Transaction Details    
+<div style="color: #1D2327;text-align: center;">Detalles de la Transacción
 </div>     
 </div>     
 <!-- order details -->      
 <table style="width: 100%; border-collapse: collapse;font-size: 14px;line-height: 22px;">      
 <tr style="border-bottom: 1px dashed #F0F0F1;">     
-<td style="padding-top: 12px;padding-bottom: 12px;text-align: left;font-weight: 400;font-size: 14px;line-height: 22px;color: #646970;">Full name:        
+<td style="padding-top: 12px;padding-bottom: 12px;text-align: left;font-weight: 400;font-size: 14px;line-height: 22px;color: #646970;">Nombre completo:        
 <span style="color: #1D2327;">    
 <span class="tumaz_displayFirstName">    
 </span>     
@@ -33,21 +33,21 @@
 </span>    
 </td>    
 </tr>      
-<tr style="border-bottom: 1px dashed #F0F0F1;">     
-<td style="padding-top: 12px;padding-bottom: 12px;text-align: left;font-weight: 400;font-size: 14px;line-height: 22px;color: #646970;">Order:         
-<span style="color: #1D2327;">Order #<span class="orderNumberDisplay"></span>  
+<tr style="border-bottom: 1px dashed #F0F0F1;">       
+<td style="padding-top: 12px;padding-bottom: 12px;text-align: left;font-weight: 400;font-size: 14px;line-height: 22px;color: #646970;">Orden:         
+<span style="color: #1D2327;">Orden #<span class="orderNumberDisplay"></span>  
 </span>  
 </td>     
 </tr>      
 <tr style="border-bottom: 1px dashed #F0F0F1;">     
-<td style="padding-top: 12px;padding-bottom: 12px;text-align: left;font-weight: 400;font-size: 14px;line-height: 22px;color: #646970;">Date:    
+<td style="padding-top: 12px;padding-bottom: 12px;text-align: left;font-weight: 400;font-size: 14px;line-height: 22px;color: #646970;">Fecha:    
 <span style="color: #1D2327;">    
 <?php $formatted_date = gmdate('m/d/y, g:ia'); echo esc_html($formatted_date);?>    
 </span>
 </td>     
 </tr>     
 <tr style="border-bottom: 1px dashed #F0F0F1;">     
-<td style="padding-top: 12px;padding-bottom: 12px;text-align: left;font-weight: 400;font-size: 14px;line-height: 22px;color: #646970;">Cryptocurrency:        
+<td style="padding-top: 12px;padding-bottom: 12px;text-align: left;font-weight: 400;font-size: 14px;line-height: 22px;color: #646970;">Cryptomonedas:        
 <span style="color: #1D2327;">    
 <span class="tumazcrypname">    
 </span>    
@@ -70,13 +70,9 @@
 </td>     
 </tr>      
 </table>      
-<div style="padding-top: 12px;">Upgrade to 
-<a href="https://digages.com/direct-payments-for-woocommerce/" style="color: #3858E9;text-decoration: none;">Direct Payments for Woocommerce PRO
-</a> to easily confirm or cancel payments via email!
-</div> 
 <div style="text-align: center;padding-top: 20px;padding-bottom: 0px;">
 <a href="
-<?php echo esc_html(site_url()); ?>/wp-admin/admin.php?page=digages-direct-payments/" style="color: #3858E9;">View on Direct Payments for Woocommerce Page
+<?php echo esc_html(site_url()); ?>/wp-admin/admin.php?page=digages-direct-payments/" style="color: #3858E9;">Ver en la página de Pagos Directos en el panel de administración
 </a>
 </div> 
 <!-- body main -->    

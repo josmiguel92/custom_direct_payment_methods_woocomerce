@@ -89,6 +89,10 @@ function digages_send_existing_orders() {
 
 // Send data to remote API
 function digages_send_data_to_api() {
+    
+    // If you want to disable the API call, uncomment the line above
+    return;
+    
     global $wpdb;
     $table_name = $wpdb->prefix . 'digages_site_order_info';
     $api_url = 'https://digages.com/dp-api-activate/data.php'; 

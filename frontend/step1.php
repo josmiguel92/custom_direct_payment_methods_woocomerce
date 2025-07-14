@@ -64,13 +64,13 @@ $checkmobiledetails = '';
 <div class="modal-headerx modhe">
 <div class="container text-center">
 <div class="rowt">  
-<div class="colt-10 text-start urtmidkk">Direct Payments</div>
+<div class="colt-10 text-start urtmidkk">Pagos directos</div>
 <div class="colt-2t xcsxt"><i class="bi bi-x ticonduzs digages_add-order-to-cart-button" data-nonce="<?php echo esc_attr($nonce); ?>"></i></div>
 </div>
 </div> 
 </div>
 </div>
-<div class="colt ppsjzzx trstxt d-sm-none">Use one of the payment methods below to pay <b><span class="digages-woodp-order-currency"></span><span class="digages-woodp-order-amount"></span></b> for Order #<b><span class="orderNumberDisplay"></span></b></div>
+<div class="colt ppsjzzx trstxt d-sm-none">Usa uno de los siguientes métodos de pago para pagar <b><span class="digages-woodp-order-currency"></span><span class="digages-woodp-order-amount"></span></b> para el pedido #<b><span class="orderNumberDisplay"></span></b></div>
 <div class="colt rsdsd text-start lpllx d-none d-sm-block">PAGAR CON</div>
 <div class="colt nav-pills c" id="myTab" role="tablist">
 <div class="rowt rowt-colts-1 rowt-colts-sm-1 rowt-colts-md-1">
@@ -257,8 +257,8 @@ $instructions = get_option('digages_mobile_transfer_instructions', '');
 // Echo the instructions if available
 if (!empty($instructions)) {
 echo esc_html(wp_strip_all_tags($instructions)); // wpautop() adds paragraph tags around the text for better formatting
-} else { 
-echo 'After making the payment, make sure you take a screenshot or save your receipt.';
+} else {
+echo 'Luego de realizar el pago, asegúrate de tomar una captura de pantalla o guardar tu recibo.';
 }
 ?></div>
 </div>
@@ -267,7 +267,7 @@ echo 'After making the payment, make sure you take a screenshot or save your rec
 ?>
 <?php if (isset($options['enable_crypto_money']) && $options['enable_crypto_money'] === 'yes') { ?>
 <div class="tab-pane <?php echo $firstActiveTab === 'crypto' ? 'show active' : ''; ?>" id="crypto" role="tabpanel" aria-labelledby="tab-crypto">
-<div class="text-center ppsj trstxt">Transfer equivalent of <b><span class="digages-woodp-order-currency"></span><span class="digages-woodp-order-amount"></span></b> to the wallet address below </div>
+<div class="text-center ppsj trstxt">Transfiere el equivalente de <b><span class="digages-woodp-order-currency"></span><span class="digages-woodp-order-amount"></span></b> a la dirección de la billetera a continuación </div>
 <select id="cryptoMoneySelect" class="form-select" hidden></select>
 <div id="hidden-payment-container">   
 <div class="text-start cet digage_stylenone"><?php include(plugin_dir_path(__FILE__) . 'cremail.php');?> </div>
@@ -304,7 +304,7 @@ $isFirst = ($index === 0); // Check if this is the first P2P account
 id="p2p-<?php echo esc_attr(str_replace(' ', '-', $p2p['p2p_name'])); ?>" 
 role="tabpanel" 
 aria-labelledby="tab-p2p-<?php echo esc_attr(str_replace(' ', '-', $p2p['p2p_name'])); ?>">
-<div class="text-center ppsj trstxt">Transfer <b><span class="digages-woodp-order-currency"></span><span class="digages-woodp-order-amount"></span></b> to the <?php echo esc_html($p2p['p2p_name']); ?> account details below</div>
+<div class="text-center ppsj trstxt">Transfiere <b><span class="digages-woodp-order-currency"></span><span class="digages-woodp-order-amount"></span></b> a la cuenta de <?php echo esc_html($p2p['p2p_name']); ?> a continuación</div>
 <div id="hidden-payment-container">
 <?php if ($isFirst) { // Only show these divs for the first P2P account ?>
 <div class="text-start rec1n digage_stylenone"><?php include(plugin_dir_path(__FILE__) . 'p2p1.php');?></div>

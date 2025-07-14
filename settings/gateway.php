@@ -168,16 +168,7 @@ function digages_direct_payments_gateway_init() {
                 $selected_methods = array_filter([$enabled_bank_transfer, $enabled_mobile_money, $enabled_p2p_payments], function($method) {
                     return $method === 'yes';
                 });
-        
-                // If more than one method is enabled, display an error message and stop saving
-                if (count($selected_methods) > 1) {
-                    add_action('admin_notices', function() { 
-                    });
 
-                    // Reload the options without saving them
-                    $this->init_settings();
-                    return false; // Prevent saving options 
-            }
         
             // If validation passed, proceed to save the settings
             return parent::process_admin_options();

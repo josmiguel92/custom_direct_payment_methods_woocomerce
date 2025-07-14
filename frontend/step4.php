@@ -10,13 +10,13 @@ $nonce = wp_create_nonce('digages_add_order_to_cart_nonce');
 <div class="modal-headerx modhe">
 <div class="container text-center">
 <div class="rowt">
-<div class="colt-10 text-start urtmidkk">Direct Payments</div>
+<div class="colt-10 text-start urtmidkk">Pagos directos</div>
 <div class="colt-2t xcsxt"><i class="bi bi-x ticonduzs tumaz_closeModalIcon" data-bs-dismiss="modal" aria-label="Close"></i></div>
 </div>
 </div> 
 </div>
 </div>
-<div class="colt ppsjzzx trstxt d-sm-none">Use one of the payment methods below to pay <b><span class="digages-woodp-order-currency"></span><span class="digages-woodp-order-amount"></span></b> for Order #<b><span class="orderNumberDisplay"></span></b></div>
+<div class="colt ppsjzzx trstxt d-sm-none">Usa uno de los métodos de pago a continuación para pagar <b><span class="digages-woodp-order-currency"></span><span class="digages-woodp-order-amount"></span></b> para el pedido #<b><span class="orderNumberDisplay"></span></b></div>
 <div class="colt rsdsd text-start lpllx d-none d-sm-block">PAGAR CON</div>
 <div class="colt nav-pills tab-contentm" id="myTab" role="tablist">
 <div class="rowt rowt-colts-1 rowt-colts-sm-1 rowt-colts-md-1">
@@ -114,7 +114,7 @@ echo esc_html($activePaymentMethod);
 <div class="rowt">
 <div class="colt-12 text-center xzzs">
 <div class="rowt rowt-colts-1 rowt-colts-sm-1 rowt-colts-md-1">
-<div class="colt tumaz_paaeer">Pay <span class="ppurl"><span class="digages-woodp-order-currency"></span><span class="digages-woodp-order-amount"></span></span></div>
+<div class="colt tumaz_paaeer">Pagar <span class="ppurl"><span class="digages-woodp-order-currency"></span><span class="digages-woodp-order-amount"></span></span></div>
 <div class="colt dvvcs text-truncate"><span class="tumaz_displayEmail"></span></div>
 </div>
 </div>
@@ -122,7 +122,7 @@ echo esc_html($activePaymentMethod);
 </div> 
 <div class="lpll"></div><!-- Top details ends --><!-- Payment details -->
 <div class="colt tab-content" id="myTabContent"><!-- Bank transfer content --> 
-<div class="ppsj trstxt">Choose your preferred <span class="digagechangepay"></span> to make payment</div> 
+<div class="ppsj trstxt">Elige tu método de pago preferido <span class="digagechangepay"></span> para realizar el pago</div> 
 <div class="text-start ppsjq"> 
 <div class="custom-select"><select id="changeSelectionSelect" class="qaarr pp"></select></div>
 </div> 
@@ -130,7 +130,7 @@ echo esc_html($activePaymentMethod);
 <div class="colt text-center kfls"><!-- Navigation Buttons for Step 2 -->
 <button type="button" class="ppopbtnzza" id="proceedToStep1"><span class="digagechangepaybtn"></span></button></div> 
 </div>
-<div class="colt text-center d-sm-none"><span class="chaaanqaz goback"><i class="bi bi-arrow-repeat"></i> Change payment method</span></div>
+<div class="colt text-center d-sm-none"><span class="chaaanqaz goback"><i class="bi bi-arrow-repeat"></i> Cambiar método de pago</span></div>
 </div> 
 </div>
 </div> 

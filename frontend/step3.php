@@ -25,7 +25,7 @@
 <a class="nav-linkt active" id="tab-bank" data-bs-toggle="tab" href="#bank" role="tab" aria-controls="bank" aria-selected="true">
 <div class="rowt"> 
 <div class="colt">
-<div class="tumaz_mob_tab_menu">Transfereencia Bancaria<span class="tumaz_mob_tab_menu_end d-sm-none text-end"><i class="bi bi-chevron-right tddsumsr"></i></span>
+<div class="tumaz_mob_tab_menu">Transferencia Bancaria<span class="tumaz_mob_tab_menu_end d-sm-none text-end"><i class="bi bi-chevron-right tddsumsr"></i></span>
 </div>
 </div> 
 </div>
@@ -120,7 +120,7 @@ echo esc_html($activePaymentMethod);
 <div class="rowt">
 <div class="colt-12 text-center xzzs">
 <div class="rowt rowt-colts-1 rowt-colts-sm-1 rowt-colts-md-1">
-<div class="colt tumaz_paaeer">Pay <span class="ppurl"><span class="digages-woodp-order-currency"></span><span class="digages-woodp-order-amount"></span></span></div>
+<div class="colt tumaz_paaeer">Pagar <span class="ppurl"><span class="digages-woodp-order-currency"></span><span class="digages-woodp-order-amount"></span></span></div>
 <div class="colt dvvcs text-truncate"><span class="tumaz_displayEmail"></span></div>
 </div>
 </div>
@@ -131,14 +131,14 @@ echo esc_html($activePaymentMethod);
 <div class="ppsj trstxt2e">
 <i class="bi bi-check-circle-fill"></i>
 </div> 
-<div class="ppsj23">Success! Your payment proof has been submitted.</div> 
-<div class="ppsj24">We’ll confirm your payment soon and start processing your order. The receipt will be sent to <span class="links"><span class="tumaz_displayEmail"></span></span></div> 
+<div class="ppsj23">¡Éxito! Su comprobante de pago ha sido enviado.</div> 
+<div class="ppsj24">Confirmaremos su pago pronto y comenzaremos a procesar su pedido. El recibo se enviará a <span class="links"><span class="tumaz_displayEmail"></span></span></div> 
 </div> 
 <div class="colt text-center kfls"><!-- Navigation Buttons for Step 2 --> 
-<button type="button" class="ppopbtnq6 digageclosepop" id="nextToStepm3">Close Window</button></div>
+<button type="button" class="ppopbtnq6 digageclosepop" id="nextToStepm3">Cerrar ventana</button></div>
 <div class="qqwqm">
 <div class="colt text-center qqwqr">
-<span class="trstxt2y">Window closes in <span class="digages_countdownDisplay">5</span> seconds</span>
+<span class="trstxt2y">La ventana se cerrará en <span class="digages_countdownDisplay">5</span> segundos</span>
 </div></div>
 </div>
 </div> 

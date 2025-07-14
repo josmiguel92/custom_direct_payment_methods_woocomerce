@@ -3,6 +3,8 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 ?>
 <?php
 function digages_plugin_notice_tenpay() {
+    return ;
+    
     if (get_user_meta(get_current_user_id(), 'digages_plugin_notice_dismissed_tenpay', true)) {
         return;
     }
@@ -48,71 +50,12 @@ $count = count( $orders );
     if ($count == 10) {
     ?>
     
-<div class="digages-plugin-notice notice is-dismissible " style="border-left-color:  #533582 !important;padding:0 !important;">
-<div class="digages-notice-container">
 
-<div class="digages-notice-container-item1">
-
-<div class="digages-notice-container-item1-txt">
-🎉🎉 Congrats on your 10th Payment! Leave a Review & Claim $10 Off
-</div>
-<div class="">
-Cheers to your 10th payment! 🎉 Leave a review to earn $10 off any of our PRO plan. 
-Need help? See 
-<a href="https://digages.com/?fluentcrm=1&route=smart_url&slug=chcfc87" target="_blank">the guide</a>
- or 
- <a href="https://digages.com/?fluentcrm=1&route=smart_url&slug=chdzxb1" target="_blank">contact support</a> 
- for assistance.
-
-</div>
-
-<div class="digages-notice-container-item1-btn">
-
-<div class="">
-<a href="https://digages.com/?fluentcrm=1&route=smart_url&slug=chcfc87" target="_blank"><button class="btn1">Get $10 Coupon</button></a>
-</div>
-<div class="">
-<a href="https://digages.com/?fluentcrm=1&route=smart_url&slug=cheb2o4" target="_blank"><button class="btn2">Leave a Review</button></a>
-</div>
-<div class="digages-notice-container-item1-btn-dismiss">
-<a href="#" class="digages-dismiss-notice-tenpay">
-<div>
-<?php
-// phpcs:disable PluginCheck.CodeAnalysis.ImageFunctions.NonEnqueuedImage
-?> 
-<img src="<?php echo esc_url($dismiss) ?>" />
-<?php
-// phpcs:enable
-?>
-</div>
-<div>
-Dismiss
-</div>
-</a>
-</div>
-
-</div>
-</div>
-
-
-<div class="digages-notice-container-item2">
-<?php
-// phpcs:disable PluginCheck.CodeAnalysis.ImageFunctions.NonEnqueuedImage
-?> 
-<img src="<?php echo esc_url($logo) ?>" />
-<?php
-// phpcs:enable
-?>
-</div>
-
-
-</div>
-</div> 
 <?php
     }
 
 }
-add_action('admin_notices', 'digages_plugin_notice_tenpay');
+//add_action('admin_notices', 'digages_plugin_notice_tenpay');
 
 
 
@@ -121,7 +64,7 @@ function digages_dismiss_notice_tenpay() {
     update_user_meta(get_current_user_id(), 'digages_plugin_notice_dismissed_tenpay', true);
     wp_die();
 }
-add_action('wp_ajax_digages_dismiss_notice_tenpay', 'digages_dismiss_notice_tenpay');
+//add_action('wp_ajax_digages_dismiss_notice_tenpay', 'digages_dismiss_notice_tenpay');
 
 
 

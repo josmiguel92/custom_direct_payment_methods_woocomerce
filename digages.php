@@ -162,8 +162,6 @@ function add_upload_capability_to_subscribers() {
 add_action('init', 'add_upload_capability_to_subscribers');
 
 //USA Ads
-add_action('admin_notices', 'digages_july_notice_display');
-add_action('admin_init', 'digages_july_notice_handle_action');
 include_once(plugin_dir_path(__FILE__) . 'ads/usa/main.php');
 
 

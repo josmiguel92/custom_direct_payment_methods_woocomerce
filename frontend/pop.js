@@ -56,8 +56,8 @@ jQuery(document).ready(function($) {
                 $(document).off('click', '.digages_add-order-to-cart-button').on('click', '.digages_add-order-to-cart-button', function (e) {
                    // console.log('.digages_add-order-to-cart-button clicked'); // Debugging log
                     e.preventDefault();
-            
-                    if (confirm("Do you want to cancel this payment?")) {
+
+                    if (confirm("¿Quieres cancelar este pago?")) {
                         var nonce = $(this).data('nonce');
                         var orderId = $('.orderNumberDisplay').first().text().trim();
                         var currentUrl = window.location.href;
@@ -76,11 +76,11 @@ jQuery(document).ready(function($) {
                                     // Redirect to our virtual page
                                     window.location.href = ajax_object.site_url + '/digages-order-canceledl';
                                 } else {
-                                    $('#order-cart-message').text(response.data || 'Error adding products to cart.');
+                                    $('#order-cart-message').text(response.data || 'Error al agregar productos al carrito.');
                                 }
                             },
                             error: function () {
-                                $('#order-cart-message').text('An error occurred while adding products to the cart.');
+                                $('#order-cart-message').text('Ocurrió un error al agregar productos al carrito.');
                             }
                         });
                     } else {
@@ -395,7 +395,7 @@ jQuery(document).ready(function($) {
 // Handle file selection and upload
 $(document).on('change', '#screenshotFile', function (e) {
     if (!this.value) {
-        $('#file-upload-error').text('Please select a file to upload');
+        $('#file-upload-error').text('Por favor selecciona un archivo para subir');
         return;
     }
     $('#file-upload-error').text('');
@@ -468,7 +468,7 @@ $(document).on('change', '#screenshotFile', function (e) {
                     $('#progressWrapper').hide();
                     $('#fileSize').text(`${(uploadedFile.size / 1024).toFixed(2)} KB`).show();
                     $('#deleteUpload').show();
-                    $('.imageprocess').html(`<button type="button" class="ppopbtnq" id="nextToStep3">Submit for confirmation</button>`);
+                    $('.imageprocess').html(`<button type="button" class="ppopbtnq" id="nextToStep3">Enviar para confirmación</button>`);
 
                     // Store redirectUrl globally or pass it via data attribute
                     window.redirectUrl = redirectUrl; // Store globally for later use
@@ -480,7 +480,7 @@ $(document).on('change', '#screenshotFile', function (e) {
         };
 
         xhr.onerror = function () {
-            $('#file-upload-error').text('Upload error occurred.');
+            $('#file-upload-error').text('Ocurrió un error al subir el archivo.');
             resetUploadUI();
         };
 
@@ -523,11 +523,11 @@ $(document).on('click', '#nextToStep3', function () {
         },
         success: function (response) {
             if (!response.success) {
-                console.error('Failed to update order status:', response.data);
+                console.error('Error al actualizar el estado del pedido:', response.data);
             }
         },
         error: function (xhr, status, error) {
-            console.error('Error updating order status:', error);
+            console.error('Error al actualizar el estado del pedido:', error);
         }
     });
 
@@ -678,7 +678,7 @@ $(document).on('click', '#nextToStep3', function () {
             }
         },
         error: function (xhr, status, error) {
-            console.error('Error resending order email:', error);
+            console.error('Error reenviando el correo del pedido:', error);
         }
     });
 
@@ -695,7 +695,7 @@ function resetUploadUI() {
     $('.digagagesuploadimg').hide();
     $('.uploaddetailsww').hide();
     $('#screenshotFile').val('');
-    $('.imageprocess').html(`<button type="button" class="ppopbtnq" id="sendimagedetails" disabled>Submit for confirmation</button>`);
+    $('.imageprocess').html(`<button type="button" class="ppopbtnq" id="sendimagedetails" disabled>Enviar para confirmación</button>`);
 }
 
 // Helper function to send email and redirect
