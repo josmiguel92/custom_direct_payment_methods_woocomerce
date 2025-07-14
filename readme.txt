@@ -1,4 +1,4 @@
-=== Direct Payments for WooCommerce - Bank Transfer, Mobile Money, Crypto and Peer-to-Peer (P2P) Payments ===
+=== Custom Direct Payments for WooCommerce - Bank Transfer, Mobile Money, Crypto and Peer-to-Peer (P2P) Payments ===
 Contributors: Digages, timleyi
 Tags: payment gateway, woocommerce, crypto, mobile money, bank transfer
 Requires at least: 5.0

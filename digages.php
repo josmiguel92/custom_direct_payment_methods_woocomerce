@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Direct Payments for Woocommerce
+Plugin Name: Custom Direct Payments for Woocommerce
 Description: Enable instant payments from your customers via bank transfers, mobile money, cryptocurrency and popular P2P platforms like PayPal, Venmo, Zelle, GCash e.t.c—all with zero transaction fees. No API keys or KYC required.
 Version: 2.0.8
 Author: Digages
@@ -77,8 +77,6 @@ add_filter('plugin_row_meta', 'digages_dpwcm_plugin_custom_meta', 10, 2);
 // Add custom links to the plugin row
 function digages_dpwcm_settings_custom_links($links) {
     $custom_links = array(
-        
-        '<a href="https://digages.com/direct-payments-for-woocommerce/" target="_blank" style="color: #00A32A !important;font-weight: 600 !important;">Buy PRO Version</a>',
         '<a href="./admin.php?page=wc-settings&tab=checkout&section=digages_direct_payments">Settings</a>',
     );
     
